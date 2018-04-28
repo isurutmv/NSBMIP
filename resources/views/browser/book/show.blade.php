@@ -7,6 +7,8 @@
             <div class="col-lg-8 col-md-8 col-sm-12">
                 <header style="border-bottom: 1px solid #cccccc;padding-bottom: 10px;">
                     <h2>{{ $book->title }}</h2>
+                    <img src="{{ URL::to('/') }}/images/{{$book->id}}.png" style="height: 500px; width: 450px;"
+                         alt="{{ $book->title }}">
                     <div class="row">
                         <div class="col-lg-6 pull-left"><span>{{$book->edition}}</span></div>
                         <div class="col-lg-6 pull-right text-right">
