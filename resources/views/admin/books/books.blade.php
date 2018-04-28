@@ -53,7 +53,7 @@
                                         @foreach($books as $book)
                                             <tr>
                                                 <td>
-                                                    <img src="http://placehold.it/50x70" class="thumbnail"
+                                                    <img src="{{ URL::to('/') }}/images/{{$book->id}}.png" style="height: 50px; width: 70px;"
                                                          alt="{{ $book->title }}">
                                                 </td>
                                                 <td>
