@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\Validator;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -46,7 +48,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return View::make('admin.catagory.create');
     }
 
     /**
@@ -57,7 +59,29 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $inputs = $request->all();
+
+        $validator = Validator::make($inputs, [
+            'name'   => 'required|max:100|min:3',
+            'code' => 'required'
+        ]);
+
+        if ($validator->fails()) {
+            return redirect('admin/catagory/add-new')
+                ->withErrors($validator)
+                ->withInput();
+        } else {
+
+            $BookCategory = new BookCategory();
+            $BookCategory->title = $inputs['name'];
+            $BookCategory->categoryCode = $inputs['code'];
+            $BookCategory->description = $inputs['discription'];
+            $BookCategory->isActive = 1;
+
+            $BookCategory->save();
+        }
+
+        return redirect('/admin/catagory/add-new?status=success&catagory=' . $BookCategory->id);
     }
 
     /**

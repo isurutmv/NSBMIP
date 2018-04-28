@@ -46,7 +46,7 @@
                             class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
                     <li class="">
-                        <a href="/admin/book/add-new"><i class="fa fa-plus"></i>Add New Catagory</a>
+                        <a href="/admin/catagory/add-new"><i class="fa fa-plus"></i>Add New Catagory</a>
                     </li>
                     <li class="{{ Request::is('admin/book/list') ? 'active' : '' }}">
                         <a href="/admin/book/list"><i class="fa fa-book"></i> Catagory List List</a>

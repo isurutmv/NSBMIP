@@ -88,6 +88,12 @@
             Route::get('/publisher/search', ['uses' => 'PublisherController@getSearch']);
 
             /**
+             * Catagory
+             */
+            Route::get('/catagory/add-new', ['uses' => 'CategoryController@create', 'middleware' => 'admin']);
+            Route::post('/catagory', ['uses' => 'CategoryController@store', 'middleware' => 'admin']);
+
+            /**
              * Member
              */
             Route::get('/member/{id}',
