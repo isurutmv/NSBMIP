@@ -40,7 +40,7 @@
                             <div class="row">
                                 <div class="col-lg-8 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <label for="bookimage">Upload Image</label>
+                                        <label for="bookimage">Upload Image (*.png file only)</label>
                                         <input type="file" class="form-control" id="bookimage" name="image">
                                     </div>
                                 </div>
