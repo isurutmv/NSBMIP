@@ -40,6 +40,20 @@
 
                 </ul>
             </li>
+            <li class="treeview {{ Request::is('admin/catagory*') ? 'active' : '' }}">
+                <a href="#">
+                    <i class="fa fa-cubes"></i> <span>Catagory</span> <i
+                            class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <li class="">
+                        <a href="/admin/book/add-new"><i class="fa fa-plus"></i>Add New Catagory</a>
+                    </li>
+                    <li class="{{ Request::is('admin/book/list') ? 'active' : '' }}">
+                        <a href="/admin/book/list"><i class="fa fa-book"></i> Catagory List List</a>
+                    </li>
+
+                </ul>
+            </li>
 
             <li class="treeview {{ Request::is('admin/author*') ? 'active' : '' }}">
                 <a href="#"><i class="fa fa-language"></i> <span>Authors</span> <i
