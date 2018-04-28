@@ -76,8 +76,7 @@
                                         <label for="aCountry">Country</label>
                                         <div class="input-group">
                                             <input type="text" class="form-control input-lg" id="aCountry"
-                                                   placeholder="Loading Country"
-                                                   data-provide="typeahead" autocomplete="off" disabled="disabled"
+                                                   data-provide="typeahead" autocomplete="off"
                                                    name="country" value="{{ old('country') }}" maxlength="100" required>
                                             <span class="input-group-addon"><i id="faCountry"
                                                                                class="fa fa-spinner fa-pulse"></i></span>
