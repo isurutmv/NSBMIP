@@ -85,7 +85,7 @@
                 $book = new Book();
                 $book->title = $inputs['title'];
                 $book->edition = $inputs['edition'];
-                $book->publisher_id = DB::table('publishers')->where('name', $inputs['publisher'])->value('id');
+                $book->publisher_id = "2";
                 $book->publishDate = date('Y-m-d', strtotime($inputs['publishDate']));
                 $book->isbn10 = $inputs['isbn10'];
                 $book->isbn13 = $inputs['isbn13'];
