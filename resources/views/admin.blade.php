@@ -62,8 +62,22 @@
     <script src="{{ URL::to('/') }}/vendor/bundle.min.js" type="application/javascript"></script>
     <script src="{{ URL::to('/') }}/vendor/adminlte.min.js" type="application/javascript"></script>
     <script src="{{ URL::to('/') }}/vendor/adminlte.js" type="application/javascript"></script>
+    <script src="{{ URL::to('/') }}/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="{{ URL::to('/') }}/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 
-
+    <script>
+        $(function () {
+            $('#example1').DataTable()
+            $('#example2').DataTable({
+                'paging'      : true,
+                'lengthChange': false,
+                'searching'   : false,
+                'ordering'    : true,
+                'info'        : true,
+                'autoWidth'   : false
+            })
+        })
+    </script>
 
 
 </body>
