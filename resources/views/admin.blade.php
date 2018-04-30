@@ -42,6 +42,8 @@
         @include('admin.templates.left-sidebar')
         <div class="content-wrapper">
             @section('content')
+
+            @show
                 <div id='tawk_59dd97b6c28eca75e462555a'></div>
                 <!--Start of Tawk.to Script-->
                 <script type="text/javascript">
@@ -55,7 +57,6 @@
                         s0.parentNode.insertBefore(s1,s0);})();
                 </script>
                 <!--End of Tawk.to Script-->
-            @show
 
         </div>
         @include('admin.templates.footer')
