@@ -4,7 +4,7 @@
 'use strict';
 var bookForm = $('.book-form').length;
 console.log("book form: ", bookForm);
-var typeHead = require('./../common/typehead.js');
+var typeHead = require('../../../../public/vendor/typehead.js');
 if ( bookForm > 0 ) {
 
 	var token  = $('#token').val();

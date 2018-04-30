@@ -1,9 +1,10 @@
 /**
- * Created by ariful on 6/24/16.
+ * Created by isuru udayanga
  */
 'use strict';
+
 var bookBorrow = $('#search-book').length;
-var typeHead   = require('./../common/typehead.js');
+var typeHead   = require ('./typehead.js');
 
 if ( bookBorrow > 0 ) {
 
